@@ -114,6 +114,7 @@ body {
 
     .quote_texte {
      padding-left: 15px;   
+     margin: 35px 0 35px 0;
     }
 
 
@@ -245,7 +246,7 @@ body {
         z-index: 250;
         position: fixed;
         top: 28px;
-        left: 80px;
+        left: 30px;
         opacity: 50%;
     }
     
@@ -654,19 +655,73 @@ ACCUEIL
 }
 
 .video-pres-box {
-    margin-left: 300px;
+    position: relative;
+    display: block;
+    padding-bottom: 470px;
+    padding-right: 630px;
+    height: 0;
+    margin-left: 100px;
     margin-bottom: 100px;
+
+}
+.center {
+    text-align: center;
 }
 
-.video_presentation {
+iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    
 }
 
 .video_presentation:focus {
     outline: 0;
 }
+
+@media screen and (max-width: 500px)  {
+    .video-pres-box {
+        padding-bottom: 180px;
+        padding-right: 200px;
+        margin-left: 20px;
+    }
+
+} 
+
+@media screen and (min-width: 501px) and (max-width: 800px)  {
+    .video-pres-box {
+        padding-bottom: 210px;
+        padding-right: 200px;
+        margin-left: 25px;
+    }
+    
+}
+
+@media screen and (min-width: 801px) and (max-width: 950px)  {
+    .video-pres-box {
+        padding-bottom: 280px;
+        padding-right: 400px;
+        margin-left: 25px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 951px) and (max-width: 1150px) {
+    .video-pres-box {
+        padding-bottom: 315px;
+        padding-right: 510px;
+        margin-left: 50px;
+    }
+}
+
+
 
 /*Quote Présentation */
 .quote_intro_verte {
@@ -687,15 +742,7 @@ ACCUEIL
 }
 
 
-@media screen and (max-width: 1200px) {
-    .video_presentation {
-        width: 75%;
-        margin: auto;
-        margin-bottom: 100px;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-}
+
 
 /*****************************************
 PAGE: LETTRE DE MOTIVATION
@@ -1217,7 +1264,8 @@ PAGE: PÉDAGOGIE
 
 .p_jeux_flex {
     display: flex;
-    
+    flex-direction: row;
+    height: 100%;
 }
 
 .p_prison_flex {
@@ -1249,6 +1297,7 @@ PAGE: PÉDAGOGIE
     line-height: 30px;
     font-size: 12px;
     font-style: italic;
+    color: #455C60;
 }
 
 
@@ -1317,9 +1366,102 @@ PAGE: PÉDAGOGIE
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+.p_titre-category-prog {
+    margin-top: 40px;
+}
 
-@media screen and (max-width: 1100px) {
-    .bande_verte_pedago {
-        display: none;
+
+    @media screen and (max-width: 500px)  {
+        .bande_verte_pedago {
+            display: none;
+        
+        }
     
+    } 
+    
+    @media screen and (max-width: 800px)  {
+        .bande_verte_pedago {
+            display: none;
+        }
+
+        .p_titre-category {
+            text-align: center;
+            font-size: 45px;
+        }
+        .p_jeux_photo1 {
+            background: url('/img/Boardgames.jpg') center center/cover;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            width: 95vw;
+            height: 50vw;
+            
+        }
+        .pedago_prog_video {
+            display: none;
+        }
+
+        .pedago_prog_website {
+            margin-bottom: 50px;
+        }
+
+        .p_jeux_flex {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+
+        .p_parasco_flex {
+            display: block;
+        }
+
+        .p_parasco_photo1 {
+            background: url('/img/Parasco\ 1.jpg') no-repeat center center/cover;
+            width: 75%;
+            margin: auto;
+            margin-bottom: 25px;
+            
+        }
+        
+        .p_parasco_photo2 {
+            background: url('/img/escape.jpg') no-repeat center center/cover;
+            width: 75%;
+            margin: auto;
+            margin-bottom: 25px;
+            
+        }
+        .p_paragraphe_pedago {
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 25px;
+        }
+        .p_parasco_photo3 {
+            background: url('/img/Tricot.jpg') no-repeat center center/cover;
+            width: 75%;
+            margin: auto;
+        }
+
+        .prison-liste {
+            margin-left: 25px;
+            line-height: 25px;
+            text-align: center;
+            color: #455C60;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .pedago_prog_lien {
+            margin-bottom: 10px;
+        }
+
+
     }
+   
+    
+    @media screen and (min-width: 801px) and (max-width: 1150px) {
+        .bande_verte_pedago {
+            display: none;
+        }
+
+        
+    }
+    
