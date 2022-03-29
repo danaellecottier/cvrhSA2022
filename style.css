@@ -987,6 +987,9 @@ PAGE: CV
     font-style: italic;
 }
 
+.cv_description_specification_special {
+    margin: 7px 0;
+}
 
 .cv_titre_boite {
     display: flex;
