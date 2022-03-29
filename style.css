@@ -8,11 +8,12 @@ font-family: 'Sacramento', cursive;
 /* RÉINITIALISATION & BASE STUFF */
 :root {
     /*Couleurs*/
-    --vert: #455C60;
-    --rose: #d3b9bd;
-    --rose-pale: #d6c1c46b;
+    --vert: #0c577c;
+    --rose: #FED058;
+    --rose-pale: #fff0ca;
     --vert-pale: #455c602a;
     --dark-grey: #333333;
+    
 
     /*Fonts*/
     --texte: 'Raleway', sans-serif;
@@ -84,7 +85,8 @@ body {
 
 .quote_mark {
     font-size: 30px;
-    color: var(--rose);
+    /*color: var(--rose);*/
+    color: #FED058;
 }
 
 .quote_mark_right {
